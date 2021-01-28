@@ -4,6 +4,8 @@ import { NavBar } from './components/NavBar/NavBar';
 import { Home } from './components/Home/home';
 import { ImgBan } from './components/HomeBan/homeBan';
 
+import { ItemListContainer } from './Containers/ItemListContainer/itemListContainer';
+
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
       <NavBar/>
       <ImgBan/>
       <Home greeting={'Productos destacados'}/> 
+      <ItemListContainer/>
       
 
       <header className="App-header">
