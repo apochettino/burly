@@ -2,3 +2,58 @@
 
     background-color: yellow;
 }
+
+.cartBar {
+
+    margin: 0px 300px 0px 0px;
+    
+  }
+  
+  .cartBar ul li {
+  
+    list-style: none;
+  }
+  
+  .dropdown-menu {
+  
+    overflow: auto;
+    max-height: 430px;
+    width: 400px;
+    background-color: rgb(37, 37, 37);
+    border-color: rgb(161, 23, 23);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+  }
+  
+  .cartBar h6 {
+  
+    font-family: 'Lato';  
+    color: #fff;
+  }
+  
+  .cartBar p {
+    font-family: 'Lato';  
+    font-size: 16px;
+    margin: 15px;
+    font-weight: 600;
+    color: #fff;
+  
+  }
+  
+  .shopping-cart-total {
+  
+    width: 350px;
+  }
+  
+  .cartBar .btn-success {
+  
+    border-color: rgb(48, 202, 48);
+    background-color: transparent;
+    font-family: 'Lato';  
+  
+  }
+  
+  .cartBar .btn-success:hover {
+  
+    box-shadow: 0 2px 16px 0 rgba(5, 90, 26, 0.39), 0 2px 50px 0 rgba(8, 138, 40, 0.39);
+  }
