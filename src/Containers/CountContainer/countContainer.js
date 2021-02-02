@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Count } from './../../components/ItemCount/itemCount';
+import  Count  from './../../components/ItemCount/itemCount';
 
 
 
