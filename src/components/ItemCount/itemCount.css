@@ -1,5 +1,31 @@
 .formatoButton {
 
-    display: flex;
-    align-items: center;
+   display: flex;
+   align-items: center;
+}
+
+button{
+
+    color: rgb(3, 190, 166);  
+    background-color: rgb(53, 52, 52);    
+    height: auto;   
+    border: 2px solid rgb(32, 32, 32);
+    border-radius: 5px;
+    font-size: 16pt;
+    font-family: 'Lato';   
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.paButton {
+
+    color: rgb(3, 190, 166);    
+    font-size: 18pt;
+    font-family: 'Lato';   
+}
+
+.sumRes {
+
+    width: 50px;
+    margin: 0px 20px 0px 20px;
 }
