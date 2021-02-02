@@ -1,5 +1,5 @@
 import React from 'react'
-import './../ItemListContainer/itemListContainer.css'
+import './../ItemListContainer/itemListContainer.css';
 import  CountContainer from './../CountContainer/countContainer';
 
 export const ListContainer = ({greeting}) => {

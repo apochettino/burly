@@ -1,7 +1,9 @@
 import React from 'react';
 import * as ReactBootStrap from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
-import bannerImagen from '../../assets/imgBan01.jpg';
+import bannerImagen from '../../assets/imgBan01.png';
+import bannerImagen02 from '../../assets/imgBan02.png';
+import bannerImagen03 from '../../assets/imgBan03.png';
 
 
 export const ImgBan = () => {
@@ -23,7 +25,7 @@ export const ImgBan = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={bannerImagen}
+            src={bannerImagen02}
             alt="Third slide"
           />
       
@@ -34,7 +36,7 @@ export const ImgBan = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={bannerImagen}
+            src={bannerImagen03}
             alt="Third slide"
           />
       
