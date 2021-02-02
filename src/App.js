@@ -4,7 +4,7 @@ import { NavBar } from './components/NavBar/NavBar';
 import { Home } from './components/Home/home';
 import { ImgBan } from './components/HomeBan/homeBan';
 import { ListContainer } from './Containers/ItemListContainer/itemListContainer';
-import { CountContainer } from './Containers/CountContainer/countContainer';
+
 
 //import { ItemListContainer } from './Containers/ItemListContainer/itemListContainer';
 
@@ -14,10 +14,7 @@ function App() {
     <div className="App">
       <NavBar/>
       <ImgBan/>
-      <ListContainer greeting={'Bienvenido, te mostramos nuestros productos destacados'}/> 
-      <CountContainer/>
-      <CountContainer />
-    
+      <ListContainer greeting={'Bienvenido, te mostramos nuestros productos destacados'}/>       
       
 
       <header className="App-header">
