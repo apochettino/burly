@@ -1,16 +1,17 @@
 import React from 'react'
 import './../ItemListContainer/itemListContainer.css'
-import  countContainer from './../CountContainer/countContainer';
+import  CountContainer from './../CountContainer/countContainer';
 
 export const ListContainer = ({greeting}) => {
 
     return (
         
-        <div>    
+        <div className="prueba">    
             
             <h2 className="salu">{greeting}</h2>    
     
-            <countContainer />            
+            <CountContainer initial = {1} stock = {5}/>    
+            <CountContainer initial = {2} stock = {9}/>            
 
         </div>
     )

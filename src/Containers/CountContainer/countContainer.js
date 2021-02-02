@@ -7,9 +7,9 @@ const CountContainer = ({ initial, stock }) => {
 
         const [count, setCount] = useState(initial);
 
-        const add =() => {
+        const add = () => {
             if (count > stock) {
-                alert ("SUperaste el stock)");
+                alert ("Superaste el stock)");
             } else {
                 setCount(count + 1);
             }
