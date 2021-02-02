@@ -3,8 +3,10 @@ import './App.css';
 import { NavBar } from './components/NavBar/NavBar';
 import { Home } from './components/Home/home';
 import { ImgBan } from './components/HomeBan/homeBan';
+import { ListContainer } from './Containers/ItemListContainer/itemListContainer';
+import { CountContainer } from './Containers/CountContainer/countContainer';
 
-import { ItemListContainer } from './Containers/ItemListContainer/itemListContainer';
+//import { ItemListContainer } from './Containers/ItemListContainer/itemListContainer';
 
 
 function App() {
@@ -12,8 +14,10 @@ function App() {
     <div className="App">
       <NavBar/>
       <ImgBan/>
-      <Home greeting={'Productos destacados'}/> 
-      <ItemListContainer/>
+      <ListContainer greeting={'Bienvenido, te mostramos nuestros productos destacados'}/> 
+      <CountContainer/>
+      <CountContainer />
+    
       
 
       <header className="App-header">
