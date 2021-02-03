@@ -7,83 +7,24 @@ import './../ItemCount/itemCount.css';
 
 
 //---------------------------------
-//const Count = ({ min, max, onAdd, count }) => {
-  //  return (
-    //    <>
-      //      <div className="formatoButton">
-        //        <button onClick= {min} className="sumRes" > - </button>
-          //      <p className ="paButton">{count}</p>
-            //    <button onClick= {max}  className="sumRes"> + </button>
-           //
-            //<button disabled={count < 2} onClick ={onAdd}> 
-          //  {" "} 
-            //AGREGAR  {" "} 
-            //</button>
-
-            //</div>
-        //</>
- //   );
-//};
-
-//export default Count;
-
-const Count = ({stock, initial, onAdd2}) => {
-    console.log("initial", initial)
-const [cantidad, setCantidad] = useState(initial); 
- console.log("cantidad", cantidad)
-
-//  useEffect(() => {
-//      if(initial>1){
-//          setCantidad(initial)
-//      }
-//  }, [initial])
-
-
-const aumentar = ()=>{
-    
-    if(cantidad<stock){
-        setCantidad(cantidad+1);
-    }else{
-        alert("No es posible agregar más productos");
-    }
-};
-
-const disminuir = ()=>{
-    
-    if(cantidad===0){
-        alert("Ud no tiene productos agregados");
-    }else{
-        setCantidad(cantidad-1);
-    }
-};
-
-
-
-// const onAdd =() =>{
-//     cantidad === 0 ? alert("debe agregar productos para poder agregarlos al carrito") : console.log(cantidad) 
-    
-// }
-
+const Count = ({ min, max, onAdd, count }) => {
     return (
-        <div className="itemCount">
-            <Container >
-                <Row className="d-flex justify-content-between ">
-                    <Col xs={4} className="text-center btnAumentarDisminuir" onClick={disminuir}>-</Col>
-                    <Col xs={4} className="text-center"  ><span className="text-center" > {cantidad} </span></Col>
-                    <Col xs={4} className="text-center btnAumentarDisminuir" onClick={aumentar}>+</Col>
-                </Row>
-                <Row>
-                    <Col className="d-flex justify-content-center ">
-                        <Button variant="outline-dark"  onClick={()=> onAdd2(cantidad)}>Agregar {cantidad} productos</Button>
-                    </Col>
-                </Row>
-            </Container>
+        <>
+           <div className="formatoButton">
+                <button onClick= {min} className="sumRes" > - </button>
+                <p className ="paButton">{count}</p>
+               <button onClick= {max}  className="sumRes"> + </button>
+           
+            <button disabled={count < 2} onClick ={onAdd}> 
+            {" "} 
+            AGREGAR  {" "} 
+            </button>
 
-        </div>
-    )
+            </div>
+        </>
+   );
 };
 
+export default Count;
 
 
-
-export default Count
