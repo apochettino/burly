@@ -11,7 +11,7 @@ export const ListContainer = ({greeting}) => {
 //prueba a ver si lo arreglo
 
 const [productos, setProductos] = useState ([])
-    const {categoryId}=useParams() 
+    const [categoryId, setcategoryId]=useState() 
     
 
     useEffect(() => {
