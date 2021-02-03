@@ -1,25 +1,59 @@
-import React from'react';
 import * as ReactBootStrap from 'react-bootstrap';
 import './../ItemDetail/itemDetail.css';
 import Item01 from './components/Item/item';
+import React, { useState, useContext } from "react";
+import { Card, Container, Button } from "react-bootstrap";
 
 
-export const ItemDetail01 = ( { Items }) => {
+const ItemDetail = ({ producto }) => {
 
-    return (
-        
-        <div id="itemList">
-            <Item01 />
-
-        {videos.map(video => (
-            <Item key={item.id} item={item} />
-        ))}    
-
-        </div>
-        
-      
-
-        );
-    };
+    const {cart, addItem } = useContext(CartContext)
     
-export default ItemDetail01;        
+
+    // const [cantidadSeleccionada, setCantidadSeleccionada] = useState(1);
+    // const [showButton, setShowButton] = useState(false)
+
+    const capturarQ = (value) => {
+       
+        console.log("producto", producto)
+        console.log("cantidad", value)
+        addItem(producto, value)
+    }
+
+        const index = cart.findIndex(prod=>prod.id===producto.id)
+        const initial = index ===-1 ? 1 : cart[index].cantidad
+        
+    return (
+        <Container>
+            <Card className="cardItemDetail">
+                <Card.Img variant="top" src={producto.img} className="imgItemDetail" />
+                <Card.Body>
+                    <Card.Title>{producto.linea01}</Card.Title>
+                    <Card.Title>{producto.linea02}</Card.Title>
+                    <Card.Text>
+                        <hr />
+                        <b>Descripción:</b>{` ${producto.descripcion}`}
+                        <hr />
+                        <p><b>Precio:</b>{` $ ${producto.precio}`}</p>
+                    </Card.Text>
+                    {/* <ItemCount stock={producto.cantidad} onAdd2={capturarQ} /> */}
+
+                    {/* {showButton ?
+                        <Button variant="outline-dark" onClick={() => addItem({ producto }, cantidadSeleccionada)}>Terminar mi compra de {cantidadSeleccionada} productos</Button> :
+                        <ItemCount stock={producto.cantidad} onAdd2={capturarQ} />} */}
+
+                       <ItemCount stock={producto.cantidad} onAdd2={capturarQ} initial={initial}/>
+                       
+                    {/* <Button variant="outline-dark" onClick={() => addItem({ producto }, cantidadSeleccionada)}>Terminar mi compra de {cantidadSeleccionada} productos</Button> */}
+
+                        {/* <p>Cantidad seleccionada {cantidadSeleccionada} a agregar</p>
+                    <ItemCount stock={producto.cantidad} onAdd2={()=> addItem({producto},cantidadSeleccionada)} /> */}
+                </Card.Body>
+            </Card>
+        </Container>
+
+
+
+
+    )
+}
