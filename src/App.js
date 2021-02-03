@@ -5,6 +5,7 @@ import { Home } from './components/Home/home';
 import { ImgBan } from './components/HomeBan/homeBan';
 import { ListContainer } from './Containers/ItemListContainer/itemListContainer';
 import CountContainer from './Containers/CountContainer/countContainer';
+import Item01 from './components/Item/item';
 
 //import { ItemListContainer } from './Containers/ItemListContainer/itemListContainer';
 
@@ -15,6 +16,8 @@ function App() {
       <NavBar/>
       <ImgBan/>
       <ListContainer greeting={'Bienvenido, te mostramos nuestros productos destacados'}/>   
+      
+      
        
       
 
