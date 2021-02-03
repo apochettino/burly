@@ -1,8 +1,14 @@
-import * as ReactBootStrap from 'react-bootstrap';
-import './../ItemDetail/itemDetail.css';
-import Item01 from './components/Item/item';
 import React, { useState, useContext } from "react";
 import { Card, Container, Button } from "react-bootstrap";
+//import CountContainer from './../../Containers/CountContainer/countContainer';
+import Count from './../ItemCount/itemCount';
+import * as ReactBootStrap from 'react-bootstrap';
+import './../ItemDetail/itemDetail.css';
+//import Item01 from './components/Item/item';
+import { CartContext } from './../../context/cartContext';
+
+
+//import itemList from './../../Containers/ItemList/itemList';
 
 
 const ItemDetail = ({ producto }) => {
@@ -42,7 +48,7 @@ const ItemDetail = ({ producto }) => {
                         <Button variant="outline-dark" onClick={() => addItem({ producto }, cantidadSeleccionada)}>Terminar mi compra de {cantidadSeleccionada} productos</Button> :
                         <ItemCount stock={producto.cantidad} onAdd2={capturarQ} />} */}
 
-                       <ItemCount stock={producto.cantidad} onAdd2={capturarQ} initial={initial}/>
+                       <Count stock={producto.cantidad} onAdd2={capturarQ} initial={initial}/>
                        
                     {/* <Button variant="outline-dark" onClick={() => addItem({ producto }, cantidadSeleccionada)}>Terminar mi compra de {cantidadSeleccionada} productos</Button> */}
 
