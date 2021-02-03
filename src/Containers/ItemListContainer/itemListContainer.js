@@ -1,7 +1,7 @@
 import React from 'react'
 import './../ItemListContainer/itemListContainer.css';
 import  CountContainer from './../CountContainer/countContainer';
-import itemList from './../ItemList/itemList';
+import ItemList from './../ItemList/itemList';
 
 export const ListContainer = ({greeting}) => {
 
@@ -13,7 +13,7 @@ export const ListContainer = ({greeting}) => {
     
             <CountContainer initial = {1} stock = {5}/>    
             <CountContainer initial = {2} stock = {9}/>   
-            <itemList/>         
+            <ItemList/>         
 
         </div>
     )
