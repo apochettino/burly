@@ -11,7 +11,7 @@ const ItemList = ({itSillon}) =>{
         return(<Item key={sillon.id} producto={sillon}/>)
 
     })
-
+ 
     return(
         
 
