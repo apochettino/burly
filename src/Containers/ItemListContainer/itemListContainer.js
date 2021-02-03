@@ -24,7 +24,7 @@ const [productos, setProductos] = useState ([])
         
             const traerProductosBD= new Promise ((resolve,reject)=>{
                 setTimeout(() => {
-                resolve(prodBurly) }, 2000);
+                resolve(prodBurly) }, 200);
                 
         
             })
@@ -34,16 +34,16 @@ const [productos, setProductos] = useState ([])
                         setProductos(resultado)
                         setTimeout(() => {
                             console.log(productos)  
-                        }, 2000); 
+                        }, 100); 
                     } else {
-                        const productosFiltrados = resultado.filter(vino=>vino.linea===categoryId)
+                        const productosFiltrados = resultado.filter(itSillon=>itSillon.linea===categoryId)
                         setTimeout(() => {
                         console.log(productosFiltrados)
-                        }, 2000); 
+                        }, 100); 
                         setProductos(productosFiltrados)
                         setTimeout(() => {
                         console.log(productos)  
-                        }, 4000); 
+                        }, 100); 
                     }
                                    
                     return productos  //porqué no imprime el array completo en la consola?
