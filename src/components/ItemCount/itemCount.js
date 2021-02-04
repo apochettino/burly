@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; //se importa el useContext
+import React, { useState, useEffect } from 'react'; 
 import * as ReactBootStrap from 'react-bootstrap';
 import {Container, Row, Col, Button} from 'react-bootstrap';
 import './../ItemCount/itemCount.css';
