@@ -3,7 +3,7 @@ import './../ItemList/itemList.css';
 import Item from './../../components/Item/item'
 
 
-const ItemList = ({itSillon}) =>{
+const ItemList = ({itSillon}) =>{ 
 
     
     
